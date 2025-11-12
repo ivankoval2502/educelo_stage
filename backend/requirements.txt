@@ -1,0 +1,14 @@
+pydantic[email]
+pydantic-settings
+fastapi
+uvicorn
+logger
+passlib[bcrypt]
+pyjwt[crypto]
+python-dotenv
+python-multipart
+argon2-cffi
+sqlalchemy
+asyncpg
+alembic
+openai

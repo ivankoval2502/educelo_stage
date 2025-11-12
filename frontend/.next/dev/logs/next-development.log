@@ -1,0 +1,55 @@
+[00:00:03.587] Server  LOG      ✓ Ready in 2.9s
+[00:00:22.059] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:10:51.494] Server  LOG        Reload env: .env.local
+[01:10:57.010] Server  LOG        Reload env: .env.local
+[01:10:59.154] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:30:16.350] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:30:16.351] Browser ERROR   uncaughtError: ReferenceError: submit is not defined
+[01:30:16.465] Server  ERROR    ⨯ ReferenceError: submit is not defined
+[01:30:17.944] Browser ERROR   uncaughtError: ReferenceError: submit is not defined
+[01:30:24.711] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:34:43.630] Browser LOG     Registration successful! {"created_at":"2025-11-11T18:40:20.014198Z","email":"kovalivan2502@gmail.com","is_active":true,"user_id":"a5458c39-dbad-4afe-99d5-ddf4c25b41ad","username":"Ivan Koval"}
+[01:35:06.656] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrb3ZhbGl2YW4yNTAyQGdtYWlsLmNvbSIsImV4cCI6MTc2Mjg4ODI0M30.MMUZrVpRShO5OXYC1cHWD20tp4SSfJF4cX5diitGgkI","token_type":"bearer"}
+[01:35:36.897] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrb3ZhbGl2YW4yNTAyQGdtYWlsLmNvbSIsImV4cCI6MTc2Mjg4ODI3M30.v0xjX62Zu19z9BB3B__UVNco_Sd7nymECJ6Zy6uUboE","token_type":"bearer"}
+[01:40:10.082] Browser LOG     Registration successful! {"created_at":"2025-11-11T18:45:46.592075Z","email":"pisapopa@example.com","is_active":true,"user_id":"88afa176-be34-4bb1-a7a0-c9860334c6b3","username":"pisa popa"}
+[01:40:52.339] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwaXNhcG9wYUBleGFtcGxlLmNvbSIsImV4cCI6MTc2Mjg4ODU4OX0.-ROtN9jlUMPkLr8Yz_qeqXVoMxRpES2YTK_WIO8PUN4","token_type":"bearer"}
+[01:51:44.999] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:13:33.952] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
+[02:13:59.966] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:13:59.966] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
+[02:14:36.941] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
+[02:42:16.535] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:42:19.943] Browser ERROR   Auth check failed: {}
+[02:44:25.294] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:44:25.873] Server  WARN     ⚠ ./src/app/layout.tsx
+Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+
+Import trace for requested module:
+./src/app/layout.tsx
+[02:44:26.333] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:44:26.965] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[02:44:32.368] Server  WARN     ⚠ ./src/app/layout.tsx
+Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+
+Import trace for requested module:
+./src/app/layout.tsx
+[02:44:32.583] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[02:44:32.703] Server  WARN     ⚠ ./src/app/layout.tsx
+Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+
+Import trace for requested module:
+./src/app/layout.tsx
+[02:44:33.005] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `RootLayout`.
+[02:48:20.766] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:49:58.308] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:49:59.030] Server  ERROR    ⨯ ReferenceError: isLogin is not defined
+[02:49:59.945] Browser ERROR   unhandledRejection: ReferenceError: isLogin is not defined
+[02:49:59.945] Browser ERROR   uncaughtError: ReferenceError: isLogin is not defined
+[02:57:36.423] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:57:36.429] Browser ERROR   uncaughtError: ReferenceError: user is not defined
+[02:57:38.418] Browser ERROR   uncaughtError: ReferenceError: user is not defined
+[02:58:17.880] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
