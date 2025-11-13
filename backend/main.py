@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from app.routers import chat, plans
 from app.auth import router as auth_router
+from app.chat import router as chat_router
 from app.core.database import engine, Base
 
 @asynccontextmanager
@@ -27,14 +27,14 @@ app.add_middleware(
     allow_headers=["*"],  # Разрешить все заголовки
 )
 
-app.include_router(chat.router, prefix="/api/v1", tags=["chat"])
-#app.include_router(plans.router, prefix="/api/v1", tags=["plans"])
+
 app.include_router(auth_router.router, prefix="/api/v1/auth", tags=["auth"])
+app.include_router(chat_router.router, prefix="/api/v1/chat", tags=["chat"])
 
 @app.post("/health")
 def health():
     return {"status": "ok"}
 
 @app.get("/")
-def foo():
+def root():
     return {"message": "http://localhost:8000/docs"}

@@ -1,55 +1,984 @@
-[00:00:03.587] Server  LOG      ✓ Ready in 2.9s
-[00:00:22.059] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:10:51.494] Server  LOG        Reload env: .env.local
-[01:10:57.010] Server  LOG        Reload env: .env.local
-[01:10:59.154] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:30:16.350] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:30:16.351] Browser ERROR   uncaughtError: ReferenceError: submit is not defined
-[01:30:16.465] Server  ERROR    ⨯ ReferenceError: submit is not defined
-[01:30:17.944] Browser ERROR   uncaughtError: ReferenceError: submit is not defined
-[01:30:24.711] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:34:43.630] Browser LOG     Registration successful! {"created_at":"2025-11-11T18:40:20.014198Z","email":"kovalivan2502@gmail.com","is_active":true,"user_id":"a5458c39-dbad-4afe-99d5-ddf4c25b41ad","username":"Ivan Koval"}
-[01:35:06.656] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrb3ZhbGl2YW4yNTAyQGdtYWlsLmNvbSIsImV4cCI6MTc2Mjg4ODI0M30.MMUZrVpRShO5OXYC1cHWD20tp4SSfJF4cX5diitGgkI","token_type":"bearer"}
-[01:35:36.897] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrb3ZhbGl2YW4yNTAyQGdtYWlsLmNvbSIsImV4cCI6MTc2Mjg4ODI3M30.v0xjX62Zu19z9BB3B__UVNco_Sd7nymECJ6Zy6uUboE","token_type":"bearer"}
-[01:40:10.082] Browser LOG     Registration successful! {"created_at":"2025-11-11T18:45:46.592075Z","email":"pisapopa@example.com","is_active":true,"user_id":"88afa176-be34-4bb1-a7a0-c9860334c6b3","username":"pisa popa"}
-[01:40:52.339] Browser LOG     Login successful! {"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJwaXNhcG9wYUBleGFtcGxlLmNvbSIsImV4cCI6MTc2Mjg4ODU4OX0.-ROtN9jlUMPkLr8Yz_qeqXVoMxRpES2YTK_WIO8PUN4","token_type":"bearer"}
-[01:51:44.999] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:13:33.952] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
-[02:13:59.966] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:13:59.966] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
-[02:14:36.941] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
-[02:42:16.535] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:42:19.943] Browser ERROR   Auth check failed: {}
-[02:44:25.294] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:44:25.873] Server  WARN     ⚠ ./src/app/layout.tsx
-Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+[00:00:03.420] Server  LOG      ✓ Ready in 2.8s
+[00:00:09.374] Browser ERROR   Auth check failed: {}
+[00:05:51.617] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:51.618] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:05:53.179] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:06:06.931] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:08:33.182] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:35.937] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:08:46.826] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:08:53.191] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:55.141] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {src, height, width, blurWidth, blurHeight}). If you meant to render a collection of children, use an array instead.
+[00:10:02.207] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:18:08.567] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:18:10.007] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {email, user_id, is_active, username, hashed_password, created_at}). If you meant to render a collection of children, use an array instead.
+[00:18:28.314] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:18:30.309] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {email, user_id, is_active, username, hashed_password, created_at}). If you meant to render a collection of children, use an array instead.
+[00:18:37.204] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:45.243] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:45.244] Browser ERROR   uncaughtError: ReferenceError: Bot is not defined
+[00:25:47.310] Browser ERROR   uncaughtError: ReferenceError: Bot is not defined
+[00:26:03.309] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:36:37.026] Browser ERROR   Failed to load conversations: {}
+[00:36:40.274] Browser ERROR   Auth check failed: {}
+[00:40:57.036] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:40:57.036] Browser ERROR   uncaughtError: ReferenceError: conversations is not defined
+[00:40:59.081] Browser ERROR   uncaughtError: ReferenceError: conversations is not defined
+[00:41:28.208] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:41:28.533] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:35.196] Browser ERROR   ./src/app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  3 | import { ReactNode, useState, useEffect } from 'react'
+  4 | import Sidebar from '@/components/layout/Sidebar'
+> 5 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  6 | import { getConversations } from '@/lib/api'
+  7 | import { Conversation } from '@/lib/types'
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:54:35.598] Server  ERROR    ⨯ ./src/app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  3 | import { ReactNode, useState, useEffect } from 'react'
+  4 | import Sidebar from '@/components/layout/Sidebar'
+> 5 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  6 | import { getConversations } from '@/lib/api'
+  7 | import { Conversation } from '@/lib/types'
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:54:35.630] Browser ERROR   ./src/app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  3 | import { ReactNode, useState, useEffect } from 'react'
+  4 | import Sidebar from '@/components/layout/Sidebar'
+> 5 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  6 | import { getConversations } from '@/lib/api'
+  7 | import { Conversation } from '@/lib/types'
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:55:38.661] Browser ERROR   ./src/app/dashboard/layout.tsx:5:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  3 | import { ReactNode, useState, useEffect } from 'react'
+  4 | import Sidebar from '@/components/layout/Sidebar'
+> 5 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  6 | import { getConversations } from '@/lib/api'
+  7 | import { Conversation } from '@/lib/types'
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:58:41.776] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [b8b54f95-c936-459d-ae3b-9010108acd50]
+[01:07:42.075] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:07:43.522] Browser ERROR   Failed to load conversations: {}
+[01:07:43.522] Browser ERROR   Auth check failed: {}
+[01:09:34.399] Browser ERROR   Failed to generate title: {}
+[01:16:36.452] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:16:36.452] Browser ERROR   uncaughtError: Error: Image with src "/images/logo.svg" is missing required "width" property.
+[01:16:38.401] Browser ERROR   uncaughtError: Error: Image with src "/images/logo.svg" is missing required "width" property.
+[01:16:46.558] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:45:13.870] Browser ERROR   Failed to load conversations: {}
+[01:45:13.870] Browser ERROR   Failed to load conversations: {}
+[01:45:22.109] Browser ERROR   Failed to load conversations: {}
+[01:45:22.109] Browser ERROR   Auth check failed: {}
+[01:48:08.522] Browser WARN    Image with src "/images/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:58:15.235] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
+
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/layout.tsx
-[02:44:26.333] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-[02:44:26.965] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+./src/app/dashboard/ai-tutor/page.tsx
+[01:58:15.350] Server  ERROR    ⨯ ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
 
-Check the render method of `RootLayout`.
-[02:44:32.368] Server  WARN     ⚠ ./src/app/layout.tsx
-Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/layout.tsx
-[02:44:32.583] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-[02:44:32.703] Server  WARN     ⚠ ./src/app/layout.tsx
-Attempted import error: '@/lib/context/AuthContext' does not contain a default export (imported as 'AuthProvider').
+./src/app/dashboard/ai-tutor/page.tsx
+[01:58:20.454] Server  ERROR    ⨯ ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
+
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/layout.tsx
-[02:44:33.005] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+./src/app/dashboard/ai-tutor/page.tsx
+[01:58:20.567] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
 
-Check the render method of `RootLayout`.
-[02:48:20.766] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:49:58.308] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:49:59.030] Server  ERROR    ⨯ ReferenceError: isLogin is not defined
-[02:49:59.945] Browser ERROR   unhandledRejection: ReferenceError: isLogin is not defined
-[02:49:59.945] Browser ERROR   uncaughtError: ReferenceError: isLogin is not defined
-[02:57:36.423] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[02:57:36.429] Browser ERROR   uncaughtError: ReferenceError: user is not defined
-[02:57:38.418] Browser ERROR   uncaughtError: ReferenceError: user is not defined
-[02:58:17.880] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[01:58:21.105] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[01:58:21.258] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × Expression expected
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:234:1]
+ 231 │                         </div>
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+     ·                         ─
+ 235 │                             onClick={handleCreateConversation}
+ 236 │                             disabled={loading}
+ 236 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+     ╰────
+  × Expected '</', got 'onClick'
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:235:1]
+ 232 │ 
+ 233 │                         <button
+ 234 │                         <button
+ 235 │                             onClick={handleCreateConversation}
+     ·                             ───────
+ 236 │                             disabled={loading}
+ 237 │                             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 cursor-pointer font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50"
+ 237 │                         >
+     ╰────
+
+Caused by:
+    Syntax Error
+[01:58:21.638] Server  LOG      ○ Compiling /_error ...
+[01:58:23.931] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:58:24.080] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:58:24.984] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:07:16.967] Browser ERROR   Failed to load conversations: {}
+[02:07:16.968] Browser ERROR   Auth check failed: {}
+[02:07:34.654] Browser WARN    Image with src "/images/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:09:14.570] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:09:20.837] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:10:21.402] Server  ERROR    ⨯ ./src/app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  4 | import { useRouter } from 'next/navigation'
+  5 | import Sidebar from '@/components/layout/Sidebar'
+> 6 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  7 | import { getConversations } from '@/lib/api'
+  8 | import { Conversation } from '@/lib/types'
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found
+[02:10:21.407] Browser ERROR   ./src/app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  4 | import { useRouter } from 'next/navigation'
+  5 | import Sidebar from '@/components/layout/Sidebar'
+> 6 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  7 | import { getConversations } from '@/lib/api'
+  8 | import { Conversation } from '@/lib/types'
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found
+[02:10:38.530] Browser ERROR   ./src/app/dashboard/layout.tsx:6:1
+Module not found: Can't resolve '@/components/auth/ProtectedRoute'
+  4 | import { useRouter } from 'next/navigation'
+  5 | import Sidebar from '@/components/layout/Sidebar'
+> 6 | import ProtectedRoute from '@/components/auth/ProtectedRoute'
+    | ^
+  7 | import { getConversations } from '@/lib/api'
+  8 | import { Conversation } from '@/lib/types'
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found
+[02:19:16.034] Browser LOG     🔄 Generating title for first message...
+[02:19:18.175] Browser LOG     ✅ Title generated: Exploring Python in Five Words
+[02:29:34.752] Browser LOG     🔄 Generating title for first message...
+[02:29:36.376] Browser LOG     ✅ Title generated: Explaining Python Programming Language in Just ...
+[02:34:32.855] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:50.786] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:35:19.072] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:40:31.090] Browser LOG     Generation stopped by user
+[02:41:56.231] Browser ERROR   Failed to send message: {}
+[02:42:07.185] Browser LOG     Generation stopped by user
+[02:44:10.943] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:47:13.845] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[02:47:13.866] Server  ERROR    ⨯ ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[02:47:14.407] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[02:47:14.584] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+[02:47:17.828] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:47:18.057] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:47:18.057] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[02:47:18.200] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:47:18.437] Server  ERROR    ⨯ ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[02:47:18.441] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/dashboard/ai-tutor/page.tsx
+[02:47:18.960] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+
+Caused by:
+    Syntax Error
+[02:47:19.289] Browser ERROR   ./src/app/dashboard/ai-tutor/page.tsx
+Error:   × await isn't allowed in non-async function
+     ╭─[C:\Users\ggdeviant\Documents\Educelo\mvp\frontend\src\app\dashboard\ai-tutor\page.tsx:113:1]
+ 110 │             // Удаляем из БД если сообщение уже сохранено
+ 111 │             if (currentAiMessageId && !currentAiMessageId.startsWith('temp-ai') && currentConversation) {
+ 112 │                 try {
+ 113 │                     await deleteMessage(currentConversation.conversation_id, currentAiMessageId)
+     ·                     ─────
+ 114 │                 } catch (error) {
+ 115 │                     console.error('Failed to delete empty message:', error)
+ 115 │                 }
+     ╰────
+
+Caused by:
+    Syntax Error
+[02:47:25.823] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:47:27.254] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:47:28.145] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:49:31.410] Browser LOG     Generation stopped by user
+[02:51:49.839] Browser LOG     Generation stopped by user
+[02:52:05.032] Browser LOG     Generation stopped by user
+[02:56:53.769] Browser LOG     🛑 Stopping generation...
+[02:56:53.769] Browser LOG     Generation stopped by user
+[02:57:43.174] Browser LOG     🛑 Stopping generation...
+[02:57:43.174] Browser LOG     Generation stopped by user
+[03:00:12.826] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:00:23.620] Browser LOG     🛑 Stopping generation...
+[03:00:23.620] Browser LOG     Generation stopped by user
+[03:00:23.620] Browser LOG     🛑 Stop detected, cleaning up...
+[03:04:32.164] Browser LOG     ✅ Message deleted
+[03:06:18.297] Browser LOG     ✅ Message deleted
+[03:06:20.739] Browser LOG     ✅ Message deleted
+[03:06:43.424] Browser LOG     ✅ Message deleted
+[03:06:45.513] Browser LOG     ✅ Message deleted
+[03:06:47.325] Browser LOG     ✅ Message deleted
+[03:06:49.206] Browser LOG     ✅ Message deleted
+[03:16:14.082] Browser LOG     📝 Chunk received: That
+[03:16:14.082] Browser LOG     📝 Chunk received: 's
+[03:16:14.082] Browser LOG     📝 Chunk received:  great
+[03:16:14.082] Browser LOG     📝 Chunk received: !
+[03:16:14.082] Browser LOG     📝 Chunk received:  Python
+[03:16:14.082] Browser LOG     📝 Chunk received:  is
+[03:16:14.082] Browser LOG     📝 Chunk received:  a
+[03:16:14.082] Browser LOG     📝 Chunk received:  versatile
+[03:16:14.082] Browser LOG     📝 Chunk received:  and
+[03:16:14.082] Browser LOG     📝 Chunk received:  beginner
+[03:16:14.082] Browser LOG     📝 Chunk received: -friendly
+[03:16:14.082] Browser LOG     📝 Chunk received:  programming
+[03:16:14.082] Browser LOG     📝 Chunk received:  language
+[03:16:14.082] Browser LOG     📝 Chunk received: .
+[03:16:14.082] Browser LOG     📝 Chunk received:  Here
+[03:16:14.082] Browser LOG     📝 Chunk received: 's
+[03:16:14.082] Browser LOG     📝 Chunk received:  a
+[03:16:14.082] Browser LOG     📝 Chunk received:  step
+[03:16:14.082] Browser LOG     📝 Chunk received: -by
+[03:16:14.082] Browser LOG     📝 Chunk received: -step
+[03:16:14.082] Browser LOG     📝 Chunk received:  guide
+[03:16:14.082] Browser LOG     📝 Chunk received:  to
+[03:16:14.082] Browser LOG     📝 Chunk received:  help
+[03:16:14.082] Browser LOG     📝 Chunk received:  you
+[03:16:14.082] Browser LOG     📝 Chunk received:  get
+[03:16:14.082] Browser LOG     📝 Chunk received:  started
+[03:16:14.082] Browser LOG     📝 Chunk received:  with
+[03:16:14.082] Browser LOG     📝 Chunk received:  learning
+[03:16:14.625] Browser LOG     📝 Chunk received:  Python
+[03:16:14.625] Browser LOG     📝 Chunk received: :
+
+
+[03:16:14.625] Browser LOG     📝 Chunk received: 1
+[03:16:14.625] Browser LOG     📝 Chunk received: .
+[03:16:14.625] Browser LOG     📝 Chunk received:  **
+[03:16:14.625] Browser LOG     📝 Chunk received: Set
+[03:16:14.625] Browser LOG     📝 Chunk received:  Up
+[03:16:14.625] Browser LOG     📝 Chunk received:  Your
+[03:16:14.625] Browser LOG     📝 Chunk received:  Development
+[03:16:14.625] Browser LOG     📝 Chunk received:  Environment
+[03:16:14.625] Browser LOG     📝 Chunk received: **
+[03:16:14.625] Browser LOG     📝 Chunk received: :
+
+[03:16:14.625] Browser LOG     📝 Chunk received:   
+[03:16:14.625] Browser LOG     📝 Chunk received:  -
+[03:16:14.625] Browser LOG     📝 Chunk received:  Install
+[03:16:14.625] Browser LOG     📝 Chunk received:  Python
+[03:16:14.625] Browser LOG     📝 Chunk received: :
+[03:16:14.625] Browser LOG     📝 Chunk received:  Visit
+[03:16:14.625] Browser LOG     📝 Chunk received:  the
+[03:16:14.625] Browser LOG     📝 Chunk received:  official
+[03:16:14.625] Browser LOG     📝 Chunk received:  Python
+[03:16:14.625] Browser LOG     📝 Chunk received:  website
+[03:16:14.625] Browser LOG     📝 Chunk received:  (
+[03:16:14.625] Browser LOG     📝 Chunk received: python
+[03:16:14.625] Browser LOG     📝 Chunk received: .org
+[03:16:14.625] Browser LOG     📝 Chunk received: )
+[03:16:14.625] Browser LOG     📝 Chunk received:  and
+[03:16:14.625] Browser LOG     📝 Chunk received:  download
+[03:16:14.625] Browser LOG     📝 Chunk received:  the
+[03:16:14.625] Browser LOG     📝 Chunk received:  latest
+[03:16:14.625] Browser LOG     📝 Chunk received:  version
+[03:16:14.625] Browser LOG     📝 Chunk received:  of
+[03:16:14.625] Browser LOG     📝 Chunk received:  Python
+[03:16:14.625] Browser LOG     📝 Chunk received:  for
+[03:16:14.625] Browser LOG     📝 Chunk received:  your
+[03:16:14.625] Browser LOG     📝 Chunk received:  operating
+[03:16:14.625] Browser LOG     📝 Chunk received:  system
+[03:16:14.625] Browser LOG     📝 Chunk received: .
+
+[03:16:14.625] Browser LOG     📝 Chunk received:   
+[03:16:14.625] Browser LOG     📝 Chunk received:  -
+[03:16:15.179] Browser LOG     📝 Chunk received:  Choose
+[03:16:15.179] Browser LOG     📝 Chunk received:  a
+[03:16:15.179] Browser LOG     📝 Chunk received:  Code
+[03:16:15.179] Browser LOG     📝 Chunk received:  Editor
+[03:16:15.179] Browser LOG     📝 Chunk received: :
+[03:16:15.179] Browser LOG     📝 Chunk received:  You
+[03:16:19.749] Browser LOG     📝 Chunk received:  can
+[03:16:19.749] Browser LOG     📝 Chunk received:  use
+[03:16:19.749] Browser LOG     📝 Chunk received:  editors
+[03:16:19.749] Browser LOG     📝 Chunk received:  like
+[03:16:19.749] Browser LOG     📝 Chunk received:  Py
+[03:16:19.749] Browser LOG     📝 Chunk received: Ch
+[03:16:19.749] Browser LOG     📝 Chunk received: arm
+[03:16:19.749] Browser LOG     📝 Chunk received: ,
+[03:16:19.749] Browser LOG     📝 Chunk received:  Visual
+[03:16:19.749] Browser LOG     📝 Chunk received:  Studio
+[03:16:19.749] Browser LOG     📝 Chunk received:  Code
+[03:16:19.749] Browser LOG     📝 Chunk received: ,
+[03:16:19.749] Browser LOG     📝 Chunk received:  or
+[03:16:19.749] Browser LOG     📝 Chunk received:  J
+[03:16:19.749] Browser LOG     📝 Chunk received: upyter
+[03:16:19.749] Browser LOG     📝 Chunk received:  Notebook
+[03:16:19.749] Browser LOG     📝 Chunk received:  to
+[03:16:19.749] Browser LOG     📝 Chunk received:  write
+[03:16:19.749] Browser LOG     📝 Chunk received:  and
+[03:16:19.749] Browser LOG     📝 Chunk received:  run
+[03:16:19.749] Browser LOG     📝 Chunk received:  Python
+[03:16:19.749] Browser LOG     📝 Chunk received:  code
+[03:16:19.749] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.749] Browser LOG     📝 Chunk received: 2
+[03:16:19.749] Browser LOG     📝 Chunk received: .
+[03:16:19.749] Browser LOG     📝 Chunk received:  **
+[03:16:19.749] Browser LOG     📝 Chunk received: Learn
+[03:16:19.749] Browser LOG     📝 Chunk received:  the
+[03:16:19.749] Browser LOG     📝 Chunk received:  Basics
+[03:16:19.749] Browser LOG     📝 Chunk received: **
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+
+[03:16:19.750] Browser LOG     📝 Chunk received:   
+[03:16:19.750] Browser LOG     📝 Chunk received:  -
+[03:16:19.750] Browser LOG     📝 Chunk received:  Variables
+[03:16:19.750] Browser LOG     📝 Chunk received:  and
+[03:16:19.750] Browser LOG     📝 Chunk received:  Data
+[03:16:19.750] Browser LOG     📝 Chunk received:  Types
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+[03:16:19.750] Browser LOG     📝 Chunk received:  Understand
+[03:16:19.750] Browser LOG     📝 Chunk received:  how
+[03:16:19.750] Browser LOG     📝 Chunk received:  to
+[03:16:19.750] Browser LOG     📝 Chunk received:  declare
+[03:16:19.750] Browser LOG     📝 Chunk received:  variables
+[03:16:19.750] Browser LOG     📝 Chunk received:  and
+[03:16:19.750] Browser LOG     📝 Chunk received:  work
+[03:16:19.750] Browser LOG     📝 Chunk received:  with
+[03:16:19.750] Browser LOG     📝 Chunk received:  different
+[03:16:19.750] Browser LOG     📝 Chunk received:  data
+[03:16:19.750] Browser LOG     📝 Chunk received:  types
+[03:16:19.750] Browser LOG     📝 Chunk received:  like
+[03:16:19.750] Browser LOG     📝 Chunk received:  integers
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  floats
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  strings
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  lists
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  and
+[03:16:19.750] Browser LOG     📝 Chunk received:  dictionaries
+[03:16:19.750] Browser LOG     📝 Chunk received: .
+
+[03:16:19.750] Browser LOG     📝 Chunk received:   
+[03:16:19.750] Browser LOG     📝 Chunk received:  -
+[03:16:19.750] Browser LOG     📝 Chunk received:  Control
+[03:16:19.750] Browser LOG     📝 Chunk received:  Structures
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+[03:16:19.750] Browser LOG     📝 Chunk received:  Learn
+[03:16:19.750] Browser LOG     📝 Chunk received:  about
+[03:16:19.750] Browser LOG     📝 Chunk received:  loops
+[03:16:19.750] Browser LOG     📝 Chunk received:  (
+[03:16:19.750] Browser LOG     📝 Chunk received: for
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  while
+[03:16:19.750] Browser LOG     📝 Chunk received: )
+[03:16:19.750] Browser LOG     📝 Chunk received:  and
+[03:16:19.750] Browser LOG     📝 Chunk received:  conditional
+[03:16:19.750] Browser LOG     📝 Chunk received:  statements
+[03:16:19.750] Browser LOG     📝 Chunk received:  (
+[03:16:19.750] Browser LOG     📝 Chunk received: if
+[03:16:19.750] Browser LOG     📝 Chunk received: -
+[03:16:19.750] Browser LOG     📝 Chunk received: else
+[03:16:19.750] Browser LOG     📝 Chunk received: ).
+
+[03:16:19.750] Browser LOG     📝 Chunk received:   
+[03:16:19.750] Browser LOG     📝 Chunk received:  -
+[03:16:19.750] Browser LOG     📝 Chunk received:  Functions
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+[03:16:19.750] Browser LOG     📝 Chunk received:  Explore
+[03:16:19.750] Browser LOG     📝 Chunk received:  how
+[03:16:19.750] Browser LOG     📝 Chunk received:  to
+[03:16:19.750] Browser LOG     📝 Chunk received:  define
+[03:16:19.750] Browser LOG     📝 Chunk received:  and
+[03:16:19.750] Browser LOG     📝 Chunk received:  use
+[03:16:19.750] Browser LOG     📝 Chunk received:  functions
+[03:16:19.750] Browser LOG     📝 Chunk received:  to
+[03:16:19.750] Browser LOG     📝 Chunk received:  organize
+[03:16:19.750] Browser LOG     📝 Chunk received:  your
+[03:16:19.750] Browser LOG     📝 Chunk received:  code
+[03:16:19.750] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.750] Browser LOG     📝 Chunk received: 3
+[03:16:19.750] Browser LOG     📝 Chunk received: .
+[03:16:19.750] Browser LOG     📝 Chunk received:  **
+[03:16:19.750] Browser LOG     📝 Chunk received: Practice
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  Practice
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  Practice
+[03:16:19.750] Browser LOG     📝 Chunk received: **
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+
+[03:16:19.750] Browser LOG     📝 Chunk received:   
+[03:16:19.750] Browser LOG     📝 Chunk received:  -
+[03:16:19.750] Browser LOG     📝 Chunk received:  Coding
+[03:16:19.750] Browser LOG     📝 Chunk received:  Challenges
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+[03:16:19.750] Browser LOG     📝 Chunk received:  Solve
+[03:16:19.750] Browser LOG     📝 Chunk received:  coding
+[03:16:19.750] Browser LOG     📝 Chunk received:  problems
+[03:16:19.750] Browser LOG     📝 Chunk received:  on
+[03:16:19.750] Browser LOG     📝 Chunk received:  platforms
+[03:16:19.750] Browser LOG     📝 Chunk received:  like
+[03:16:19.750] Browser LOG     📝 Chunk received:  Le
+[03:16:19.750] Browser LOG     📝 Chunk received: etCode
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  Hacker
+[03:16:19.750] Browser LOG     📝 Chunk received: Rank
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  or
+[03:16:19.750] Browser LOG     📝 Chunk received:  Code
+[03:16:19.750] Browser LOG     📝 Chunk received: cad
+[03:16:19.750] Browser LOG     📝 Chunk received: emy
+[03:16:19.750] Browser LOG     📝 Chunk received:  to
+[03:16:19.750] Browser LOG     📝 Chunk received:  apply
+[03:16:19.750] Browser LOG     📝 Chunk received:  what
+[03:16:19.750] Browser LOG     📝 Chunk received:  you
+[03:16:19.750] Browser LOG     📝 Chunk received: 've
+[03:16:19.750] Browser LOG     📝 Chunk received:  learned
+[03:16:19.750] Browser LOG     📝 Chunk received: .
+
+[03:16:19.750] Browser LOG     📝 Chunk received:   
+[03:16:19.750] Browser LOG     📝 Chunk received:  -
+[03:16:19.750] Browser LOG     📝 Chunk received:  Mini
+[03:16:19.750] Browser LOG     📝 Chunk received:  Projects
+[03:16:19.750] Browser LOG     📝 Chunk received: :
+[03:16:19.750] Browser LOG     📝 Chunk received:  Start
+[03:16:19.750] Browser LOG     📝 Chunk received:  with
+[03:16:19.750] Browser LOG     📝 Chunk received:  simple
+[03:16:19.750] Browser LOG     📝 Chunk received:  projects
+[03:16:19.750] Browser LOG     📝 Chunk received:  like
+[03:16:19.750] Browser LOG     📝 Chunk received:  a
+[03:16:19.750] Browser LOG     📝 Chunk received:  calculator
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  a
+[03:16:19.750] Browser LOG     📝 Chunk received:  to
+[03:16:19.750] Browser LOG     📝 Chunk received: -do
+[03:16:19.750] Browser LOG     📝 Chunk received:  list
+[03:16:19.750] Browser LOG     📝 Chunk received:  app
+[03:16:19.750] Browser LOG     📝 Chunk received: ,
+[03:16:19.750] Browser LOG     📝 Chunk received:  or
+[03:16:19.750] Browser LOG     📝 Chunk received:  a
+[03:16:19.754] Browser LOG     📝 Chunk received:  basic
+[03:16:19.754] Browser LOG     📝 Chunk received:  game
+[03:16:19.754] Browser LOG     📝 Chunk received:  to
+[03:16:19.754] Browser LOG     📝 Chunk received:  reinforce
+[03:16:19.754] Browser LOG     📝 Chunk received:  your
+[03:16:19.754] Browser LOG     📝 Chunk received:  understanding
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.754] Browser LOG     📝 Chunk received: 4
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+[03:16:19.754] Browser LOG     📝 Chunk received:  **
+[03:16:19.754] Browser LOG     📝 Chunk received: Explore
+[03:16:19.754] Browser LOG     📝 Chunk received:  Python
+[03:16:19.754] Browser LOG     📝 Chunk received:  Libraries
+[03:16:19.754] Browser LOG     📝 Chunk received: **
+[03:16:19.754] Browser LOG     📝 Chunk received: :
+
+[03:16:19.754] Browser LOG     📝 Chunk received:   
+[03:16:19.754] Browser LOG     📝 Chunk received:  -
+[03:16:19.754] Browser LOG     📝 Chunk received:  Num
+[03:16:19.754] Browser LOG     📝 Chunk received: Py
+[03:16:19.754] Browser LOG     📝 Chunk received:  and
+[03:16:19.754] Browser LOG     📝 Chunk received:  Pand
+[03:16:19.754] Browser LOG     📝 Chunk received: as
+[03:16:19.754] Browser LOG     📝 Chunk received:  for
+[03:16:19.754] Browser LOG     📝 Chunk received:  data
+[03:16:19.754] Browser LOG     📝 Chunk received:  manipulation
+[03:16:19.754] Browser LOG     📝 Chunk received:  and
+[03:16:19.754] Browser LOG     📝 Chunk received:  analysis
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+
+[03:16:19.754] Browser LOG     📝 Chunk received:   
+[03:16:19.754] Browser LOG     📝 Chunk received:  -
+[03:16:19.754] Browser LOG     📝 Chunk received:  Mat
+[03:16:19.754] Browser LOG     📝 Chunk received: plotlib
+[03:16:19.754] Browser LOG     📝 Chunk received:  and
+[03:16:19.754] Browser LOG     📝 Chunk received:  Se
+[03:16:19.754] Browser LOG     📝 Chunk received: ab
+[03:16:19.754] Browser LOG     📝 Chunk received: orn
+[03:16:19.754] Browser LOG     📝 Chunk received:  for
+[03:16:19.754] Browser LOG     📝 Chunk received:  data
+[03:16:19.754] Browser LOG     📝 Chunk received:  visualization
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+
+[03:16:19.754] Browser LOG     📝 Chunk received:   
+[03:16:19.754] Browser LOG     📝 Chunk received:  -
+[03:16:19.754] Browser LOG     📝 Chunk received:  Flask
+[03:16:19.754] Browser LOG     📝 Chunk received:  or
+[03:16:19.754] Browser LOG     📝 Chunk received:  Django
+[03:16:19.754] Browser LOG     📝 Chunk received:  for
+[03:16:19.754] Browser LOG     📝 Chunk received:  web
+[03:16:19.754] Browser LOG     📝 Chunk received:  development
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.754] Browser LOG     📝 Chunk received: 5
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+[03:16:19.754] Browser LOG     📝 Chunk received:  **
+[03:16:19.754] Browser LOG     📝 Chunk received: Join
+[03:16:19.754] Browser LOG     📝 Chunk received:  a
+[03:16:19.754] Browser LOG     📝 Chunk received:  Community
+[03:16:19.754] Browser LOG     📝 Chunk received: **
+[03:16:19.754] Browser LOG     📝 Chunk received: :
+
+[03:16:19.754] Browser LOG     📝 Chunk received:   
+[03:16:19.754] Browser LOG     📝 Chunk received:  -
+[03:16:19.754] Browser LOG     📝 Chunk received:  Join
+[03:16:19.754] Browser LOG     📝 Chunk received:  online
+[03:16:19.754] Browser LOG     📝 Chunk received:  Python
+[03:16:19.754] Browser LOG     📝 Chunk received:  communities
+[03:16:19.754] Browser LOG     📝 Chunk received:  like
+[03:16:19.754] Browser LOG     📝 Chunk received:  Stack
+[03:16:19.754] Browser LOG     📝 Chunk received:  Overflow
+[03:16:19.754] Browser LOG     📝 Chunk received: ,
+[03:16:19.754] Browser LOG     📝 Chunk received:  Reddit
+[03:16:19.754] Browser LOG     📝 Chunk received: 's
+[03:16:19.754] Browser LOG     📝 Chunk received:  r
+[03:16:19.754] Browser LOG     📝 Chunk received: /
+[03:16:19.754] Browser LOG     📝 Chunk received: learn
+[03:16:19.754] Browser LOG     📝 Chunk received: python
+[03:16:19.754] Browser LOG     📝 Chunk received: ,
+[03:16:19.754] Browser LOG     📝 Chunk received:  or
+[03:16:19.754] Browser LOG     📝 Chunk received:  Python
+[03:16:19.754] Browser LOG     📝 Chunk received:  Discord
+[03:16:19.754] Browser LOG     📝 Chunk received:  to
+[03:16:19.754] Browser LOG     📝 Chunk received:  ask
+[03:16:19.754] Browser LOG     📝 Chunk received:  questions
+[03:16:19.754] Browser LOG     📝 Chunk received: ,
+[03:16:19.754] Browser LOG     📝 Chunk received:  share
+[03:16:19.754] Browser LOG     📝 Chunk received:  your
+[03:16:19.754] Browser LOG     📝 Chunk received:  progress
+[03:16:19.754] Browser LOG     📝 Chunk received: ,
+[03:16:19.754] Browser LOG     📝 Chunk received:  and
+[03:16:19.754] Browser LOG     📝 Chunk received:  learn
+[03:16:19.754] Browser LOG     📝 Chunk received:  from
+[03:16:19.754] Browser LOG     📝 Chunk received:  others
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.754] Browser LOG     📝 Chunk received: 6
+[03:16:19.754] Browser LOG     📝 Chunk received: .
+[03:16:19.754] Browser LOG     📝 Chunk received:  **
+[03:16:19.754] Browser LOG     📝 Chunk received: Take
+[03:16:19.754] Browser LOG     📝 Chunk received:  Online
+[03:16:19.754] Browser LOG     📝 Chunk received:  Courses
+[03:16:19.754] Browser LOG     📝 Chunk received:  or
+[03:16:19.754] Browser LOG     📝 Chunk received:  T
+[03:16:19.754] Browser LOG     📝 Chunk received: utorials
+[03:16:19.754] Browser LOG     📝 Chunk received: **
+[03:16:19.754] Browser LOG     📝 Chunk received: :
+
+[03:16:19.754] Browser LOG     📝 Chunk received:   
+[03:16:19.754] Browser LOG     📝 Chunk received:  -
+[03:16:19.755] Browser LOG     📝 Chunk received:  Platforms
+[03:16:19.755] Browser LOG     📝 Chunk received:  like
+[03:16:19.755] Browser LOG     📝 Chunk received:  Code
+[03:16:19.755] Browser LOG     📝 Chunk received: cad
+[03:16:19.755] Browser LOG     📝 Chunk received: emy
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  Cour
+[03:16:19.755] Browser LOG     📝 Chunk received: ser
+[03:16:19.755] Browser LOG     📝 Chunk received: a
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  ed
+[03:16:19.755] Browser LOG     📝 Chunk received: X
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  and
+[03:16:19.755] Browser LOG     📝 Chunk received:  Ud
+[03:16:19.755] Browser LOG     📝 Chunk received: emy
+[03:16:19.755] Browser LOG     📝 Chunk received:  offer
+[03:16:19.755] Browser LOG     📝 Chunk received:  Python
+[03:16:19.755] Browser LOG     📝 Chunk received:  courses
+[03:16:19.755] Browser LOG     📝 Chunk received:  for
+[03:16:19.755] Browser LOG     📝 Chunk received:  beginners
+[03:16:19.755] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.755] Browser LOG     📝 Chunk received: 7
+[03:16:19.755] Browser LOG     📝 Chunk received: .
+[03:16:19.755] Browser LOG     📝 Chunk received:  **
+[03:16:19.755] Browser LOG     📝 Chunk received: Read
+[03:16:19.755] Browser LOG     📝 Chunk received:  Python
+[03:16:19.755] Browser LOG     📝 Chunk received:  Documentation
+[03:16:19.755] Browser LOG     📝 Chunk received: **
+[03:16:19.755] Browser LOG     📝 Chunk received: :
+
+[03:16:19.755] Browser LOG     📝 Chunk received:   
+[03:16:19.755] Browser LOG     📝 Chunk received:  -
+[03:16:19.755] Browser LOG     📝 Chunk received:  Python
+[03:16:19.755] Browser LOG     📝 Chunk received: 's
+[03:16:19.755] Browser LOG     📝 Chunk received:  official
+[03:16:19.755] Browser LOG     📝 Chunk received:  documentation
+[03:16:19.755] Browser LOG     📝 Chunk received:  is
+[03:16:19.755] Browser LOG     📝 Chunk received:  well
+[03:16:19.755] Browser LOG     📝 Chunk received: -written
+[03:16:19.755] Browser LOG     📝 Chunk received:  and
+[03:16:19.755] Browser LOG     📝 Chunk received:  can
+[03:16:19.755] Browser LOG     📝 Chunk received:  be
+[03:16:19.755] Browser LOG     📝 Chunk received:  a
+[03:16:19.755] Browser LOG     📝 Chunk received:  valuable
+[03:16:19.755] Browser LOG     📝 Chunk received:  resource
+[03:16:19.755] Browser LOG     📝 Chunk received:  to
+[03:16:19.755] Browser LOG     📝 Chunk received:  deepen
+[03:16:19.755] Browser LOG     📝 Chunk received:  your
+[03:16:19.755] Browser LOG     📝 Chunk received:  understanding
+[03:16:19.755] Browser LOG     📝 Chunk received:  of
+[03:16:19.755] Browser LOG     📝 Chunk received:  the
+[03:16:19.755] Browser LOG     📝 Chunk received:  language
+[03:16:19.755] Browser LOG     📝 Chunk received: .
+
+
+[03:16:19.755] Browser LOG     📝 Chunk received: Remember
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  learning
+[03:16:19.755] Browser LOG     📝 Chunk received:  to
+[03:16:19.755] Browser LOG     📝 Chunk received:  code
+[03:16:19.755] Browser LOG     📝 Chunk received:  is
+[03:16:19.755] Browser LOG     📝 Chunk received:  a
+[03:16:19.755] Browser LOG     📝 Chunk received:  journey
+[03:16:19.755] Browser LOG     📝 Chunk received:  that
+[03:16:19.755] Browser LOG     📝 Chunk received:  requires
+[03:16:19.755] Browser LOG     📝 Chunk received:  patience
+[03:16:19.755] Browser LOG     📝 Chunk received:  and
+[03:16:19.755] Browser LOG     📝 Chunk received:  practice
+[03:16:19.755] Browser LOG     📝 Chunk received: .
+[03:16:19.755] Browser LOG     📝 Chunk received:  Don
+[03:16:19.755] Browser LOG     📝 Chunk received: 't
+[03:16:19.755] Browser LOG     📝 Chunk received:  be
+[03:16:19.755] Browser LOG     📝 Chunk received:  afraid
+[03:16:19.755] Browser LOG     📝 Chunk received:  to
+[03:16:19.755] Browser LOG     📝 Chunk received:  make
+[03:16:19.755] Browser LOG     📝 Chunk received:  mistakes
+[03:16:19.755] Browser LOG     📝 Chunk received:  -
+[03:16:19.755] Browser LOG     📝 Chunk received:  they
+[03:16:19.755] Browser LOG     📝 Chunk received:  are
+[03:16:19.755] Browser LOG     📝 Chunk received:  a
+[03:16:19.755] Browser LOG     📝 Chunk received:  natural
+[03:16:19.755] Browser LOG     📝 Chunk received:  part
+[03:16:19.755] Browser LOG     📝 Chunk received:  of
+[03:16:19.755] Browser LOG     📝 Chunk received:  the
+[03:16:19.755] Browser LOG     📝 Chunk received:  learning
+[03:16:19.755] Browser LOG     📝 Chunk received:  process
+[03:16:19.755] Browser LOG     📝 Chunk received: .
+[03:16:19.755] Browser LOG     📝 Chunk received:  Start
+[03:16:19.755] Browser LOG     📝 Chunk received:  small
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  build
+[03:16:19.755] Browser LOG     📝 Chunk received:  a
+[03:16:19.755] Browser LOG     📝 Chunk received:  strong
+[03:16:19.755] Browser LOG     📝 Chunk received:  foundation
+[03:16:19.755] Browser LOG     📝 Chunk received: ,
+[03:16:19.755] Browser LOG     📝 Chunk received:  and
+[03:16:19.755] Browser LOG     📝 Chunk received:  gradually
+[03:16:19.755] Browser LOG     📝 Chunk received:  challenge
+[03:16:19.984] Browser LOG     📝 Chunk received:  yourself
+[03:16:19.984] Browser LOG     📝 Chunk received:  with
+[03:16:19.984] Browser LOG     📝 Chunk received:  more
+[03:16:19.984] Browser LOG     📝 Chunk received:  complex
+[03:16:19.984] Browser LOG     📝 Chunk received:  concepts
+[03:16:19.984] Browser LOG     📝 Chunk received:  and
+[03:16:19.984] Browser LOG     📝 Chunk received:  projects
+[03:16:19.984] Browser LOG     📝 Chunk received: .
+[03:16:19.984] Browser LOG     📝 Chunk received:  Good
+[03:16:19.984] Browser LOG     📝 Chunk received:  luck
+[03:16:19.984] Browser LOG     📝 Chunk received: ,
+[03:16:19.984] Browser LOG     📝 Chunk received:  and
+[03:16:19.984] Browser LOG     📝 Chunk received:  enjoy
+[03:16:19.984] Browser LOG     📝 Chunk received:  your
+[03:16:19.984] Browser LOG     📝 Chunk received:  Python
+[03:16:19.984] Browser LOG     📝 Chunk received:  learning
+[03:16:19.984] Browser LOG     📝 Chunk received:  journey
+[03:16:19.984] Browser LOG     📝 Chunk received: !
+[03:20:58.654] Browser LOG     📝 Chunk received: Python
+[03:20:58.654] Browser LOG     📝 Chunk received:  is
+[03:20:58.654] Browser LOG     📝 Chunk received:  versatile
+[03:20:58.654] Browser LOG     📝 Chunk received: ,
+[03:20:58.654] Browser LOG     📝 Chunk received:  readable
+[03:20:58.654] Browser LOG     📝 Chunk received: ,
+[03:20:58.654] Browser LOG     📝 Chunk received:  powerful
+[03:20:58.654] Browser LOG     📝 Chunk received: .
+[03:20:58.905] Browser LOG     ✅ onComplete called with messageId: 3b64da1a-53f8-4a80-8040-8d37f2a3f17f
+[03:20:58.905] Browser LOG     🔄 Generating title for first message...
+[03:21:00.624] Browser LOG     ✅ Title generated: Exploring Python: A Quick Overview
+[03:22:23.289] Browser LOG     🔄 Generating title for first message...
+[03:22:24.719] Browser LOG     ✅ Title generated: Five Words to Describe Me
+[03:23:51.858] Browser LOG     🔄 Generating title for first message...
+[03:23:53.519] Browser LOG     ✅ Title generated: Getting to Know Me Better
+[03:24:05.399] Browser LOG     ✅ Message deleted
+[03:24:38.749] Browser LOG     🔄 Generating title for first message...
+[03:24:40.070] Browser LOG     ✅ Title generated: Database Design Best Practices

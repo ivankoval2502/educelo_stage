@@ -1,9 +1,9 @@
-import { FC } from 'react'
+import {FC, ReactNode} from 'react'
 import Link from 'next/link'
 
 interface NavItemProps {
     href: string
-    icon: string
+    icon: ReactNode
     label: string
     active?: boolean
     onClick?: () => void

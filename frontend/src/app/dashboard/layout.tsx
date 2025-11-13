@@ -1,11 +1,42 @@
 'use client'
 
-import { ReactNode, useState } from 'react'
+import { ReactNode, useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import Sidebar from '@/components/layout/Sidebar'
-import ProtectedRoute from "@/app/auth/ProtectedRoute";
+import ProtectedRoute from '@/app/auth/ProtectedRoute'
+import { getConversations } from '@/lib/api'
+import { Conversation } from '@/lib/types'
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
+    const [conversations, setConversations] = useState<Conversation[]>([])
+    const [loading, setLoading] = useState(true)
+    const router = useRouter()
+
+    useEffect(() => {
+        loadConversations()
+    }, [])
+
+    const loadConversations = async () => {
+        try {
+            const data = await getConversations()
+            setConversations(data)
+        } catch (error) {
+            console.error('Failed to load conversations:', error)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    const handleConversationDeleted = (conversationId: string) => {
+        // Удаляем из списка
+        setConversations(prev => prev.filter(conv => conv.conversation_id !== conversationId))
+
+        // Если мы на странице этого чата - перенаправляем на AI Tutor
+        if (window.location.search.includes(conversationId)) {
+            router.push('/dashboard/ai-tutor')
+        }
+    }
 
     return (
         <ProtectedRoute>
@@ -28,11 +59,16 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
 
                 {/* Sidebar */}
                 <div className={`
-                fixed lg:static inset-y-0 left-0 z-40
-                transform transition-transform duration-300 ease-in-out
-                ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-            `}>
-                    <Sidebar onNavigate={() => setSidebarOpen(false)} />
+          fixed lg:static inset-y-0 left-0 z-40
+          transform transition-transform duration-300 ease-in-out
+          ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+        `}>
+                    <Sidebar
+                        onNavigate={() => setSidebarOpen(false)}
+                        conversations={conversations}
+                        loading={loading}
+                        onConversationDeleted={handleConversationDeleted}
+                    />
                 </div>
 
                 {/* Main Content */}

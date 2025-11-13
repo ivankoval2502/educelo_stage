@@ -12,7 +12,7 @@ interface FeatureCardProps {
 const FeatureCard: FC<FeatureCardProps> = ({ title, description, icon, href, iconBg }) => {
     return (
         <Link href={href}>
-            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-purple-600 transition-all cursor-pointer group">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-purple-600 transition-all cursor-pointer group min-h-56">
                 <div className="flex items-start justify-between">
                     {/* Icon */}
                     <div className={`w-12 h-12 rounded-lg ${iconBg} flex items-center justify-center text-2xl group-hover:scale-110 transition-transform`}>
