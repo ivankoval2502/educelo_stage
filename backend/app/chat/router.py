@@ -297,7 +297,6 @@ async def generate_title(
 
     return conversation
 
-# Обновите эндпоинт PATCH
 @router.patch("/conversations/{conversation_id}", response_model=ConversationResponse)
 async def update_conversation(
         conversation_id: UUID,
@@ -321,7 +320,6 @@ async def update_conversation(
             detail="Conversation not found"
         )
 
-    # Обновляем название
     conversation.title = conversation_update.title
     conversation.updated_at = datetime.now(timezone.utc)
 

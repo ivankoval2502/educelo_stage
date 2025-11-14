@@ -18,6 +18,7 @@ import type {
 } from '@/lib/types'
 import MessageBubble from "@/components/chat/MessageBubble"
 import { Bot, Code, Database, Calculator, Sparkles, Square } from "lucide-react"
+import {showError, showSuccess} from "@/lib/toast";
 
 export default function AITutorPage() {
     const { user } = useAuth()
@@ -279,11 +280,12 @@ export default function AITutorPage() {
 
             // Удаляем из UI
             setMessages(prev => prev.filter(msg => msg.message_id !== messageId))
+            showSuccess("Message deleted")
 
             console.log('✅ Message deleted')
         } catch (error) {
             console.error('❌ Failed to delete message:', error)
-            alert('Failed to delete message')
+            showError("Failed to delete message")
         }
     }
 
@@ -304,7 +306,7 @@ export default function AITutorPage() {
                         </h1>
 
                         <p className="text-gray-400 text-lg mb-12">
-                            I'm here to help you learn and understand any programming topic. Ask me anything!
+                            I&apos;m here to help you learn and understand any programming topic. Ask me anything!
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

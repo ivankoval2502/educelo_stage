@@ -8,7 +8,8 @@ import NavItem from './NavItem'
 import { Home, Bot, TrendingUp, Settings, LogOut, MessageSquare, Plus, Trash2 } from 'lucide-react'
 import { Conversation } from '@/lib/types'
 import Image from 'next/image'
-import { deleteConversation } from '@/lib/api'
+import {deleteConversation, updateConversationTitle} from '@/lib/api'
+import {showError, showSuccess} from "@/lib/toast";
 
 interface SidebarProps {
     onNavigate?: () => void
@@ -21,6 +22,8 @@ const Sidebar: FC<SidebarProps> = ({ onNavigate, conversations, loading, onConve
     const pathname = usePathname()
     const { user, logout } = useAuth()
     const [deletingId, setDeletingId] = useState<string | null>(null)
+    const [editingId, setEditingId] = useState<string | null>(null)
+    const [editedTitle, setEditedTitle] = useState('')
 
     const formatTime = (dateString: string) => {
         const date = new Date(dateString)
@@ -52,6 +55,25 @@ const Sidebar: FC<SidebarProps> = ({ onNavigate, conversations, loading, onConve
             alert('Failed to delete conversation')
         } finally {
             setDeletingId(null)
+        }
+    }
+
+    const handleEditTitle = (conversationId: string, currentTitle: string) => {
+        setEditingId(conversationId)
+        setEditedTitle(currentTitle)
+    }
+
+    const handleSaveTitle = async (conversationId: string) => {
+        if (!editedTitle.trim()) {
+            showError('Title cannot be empty')
+            return
+        }
+        try {
+            await updateConversationTitle(conversationId, editedTitle)
+            showSuccess('Title updated')
+            setEditingId(null)
+        } catch (error) {
+            showError('Failed to update title')
         }
     }
 
@@ -148,9 +170,31 @@ const Sidebar: FC<SidebarProps> = ({ onNavigate, conversations, loading, onConve
                                     onClick={onNavigate}
                                     className="block p-3 pr-10 rounded-lg bg-zinc-900 hover:bg-zinc-800 transition-colors cursor-pointer"
                                 >
-                                    <p className="text-sm font-medium line-clamp-2 group-hover:text-purple-400 transition-colors">
-                                        {conv.title}
-                                    </p>
+                                    {editingId === conv.conversation_id ? (
+                                        <input
+                                            type="text"
+                                            value={editedTitle}
+                                            autoFocus
+                                            onChange={e => setEditedTitle(e.target.value)}
+                                            onBlur={() => handleSaveTitle(conv.conversation_id)}
+                                            onKeyDown={e => {
+                                                if (e.key === 'Enter') handleSaveTitle(conv.conversation_id)
+                                                else if (e.key === 'Escape') setEditingId(null)
+                                            }}
+                                            className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1"
+                                        />
+                                    ) : (
+                                        <p
+                                            className="text-sm font-medium line-clamp-2 group-hover:text-purple-400 transition-colors"
+                                            onDoubleClick={e => {
+                                                e.preventDefault()
+                                                handleEditTitle(conv.conversation_id, conv.title)
+                                            }}
+                                            title="Double click to edit"
+                                        >
+                                            {conv.title}
+                                        </p>
+                                    )}
                                     <p className="text-xs text-gray-500 mt-1">
                                         {formatTime(conv.updated_at)}
                                     </p>

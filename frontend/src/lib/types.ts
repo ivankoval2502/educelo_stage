@@ -16,6 +16,8 @@ export interface User {
     email: string;
     is_acitve: boolean;
     created_at: string;
+    weekly_goal_hours: number;
+    goal_last_updated: string | null;
 }
 
 export interface AuthResponse {

@@ -242,16 +242,19 @@ export async function sendMessageStream(
                 }
             }
         }
-    } catch (error: any) {
-        if (error.name === 'AbortError') {
+    } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') {
             console.log('Generation stopped by user')
-            throw error  // ✅ ИЗМЕНИТЬ: Выбрасываем дальше вместо return
+            throw error
         }
-        onError(error.message)
+
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+        onError(errorMessage)
         throw error
     }
 }
 
+//Generate a new conversation title after the first message
 
 export async function generateConversationTitle(
     conversationId: string
@@ -275,6 +278,38 @@ export async function generateConversationTitle(
     if (!response.ok) {
         const error = await response.json()
         throw new Error(error.detail || 'Failed to generate title')
+    }
+
+    return response.json()
+}
+
+// Update conversation title
+
+export async function updateConversationTitle(
+    conversationId: string,
+    title: string
+): Promise<Conversation> {
+    const token = localStorage.getItem('access_token')
+
+    if (!token) {
+        throw new Error('No access token found')
+    }
+
+    const response = await fetch(
+        `${API_URL}/api/v1/chat/conversations/${conversationId}`,
+        {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`,
+            },
+            body: JSON.stringify({title}),
+        }
+    )
+
+    if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Failed to update conversation title')
     }
 
     return response.json()
@@ -329,4 +364,110 @@ export async function deleteMessage(
         const error = await response.json()
         throw new Error(error.detail || 'Failed to delete message')
     }
+}
+
+//Progress API
+export async function getProgressStats() {
+    const response = await fetch(`${API_URL}/api/v1/progress/stats`, {
+        headers: {
+            'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+        }
+    })
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch progress stats')
+    }
+
+    return response.json()
+}
+
+export async function getProgressActivity() {
+    const response = await fetch(`${API_URL}/api/v1/progress/activity`, {
+        headers: {
+            'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+        }
+    })
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch activity data')
+    }
+
+    return response.json()
+}
+
+// Update user's data
+
+export async function updateUserProfile(data: {username?: string, email?: string}): Promise<{message: string; user: {username: string; email: string}}> {
+    const token = localStorage.getItem('access_token')
+
+    if (!token) {
+        throw new Error('No access token found')
+    }
+
+    const response = await fetch(`${API_URL}/api/v1/auth/me`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify(data)
+    })
+
+    if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Failed to update profile')
+    }
+
+    return response.json()
+}
+
+export async function changePassword(currentPassword: string, newPassword: string): Promise<{message: string}> {
+    const token = localStorage.getItem('access_token')
+    if (!token) {
+        throw new Error('No access token found')
+    }
+
+    const response = await fetch(`${API_URL}/api/v1/auth/change-password`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+            current_password: currentPassword,
+            new_password: newPassword
+        })
+    }
+    )
+
+    if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Failed to change password')
+    }
+
+    return response.json()
+}
+
+export async function updateWeeklyGoal(weeklyGoalHours: number): Promise<{message: string; weekly_goal_hours: number; next_update_available: string}> {
+    const token = localStorage.getItem('access_token')
+
+    if (!token) {
+        throw new Error('No access token found')
+    }
+
+    const response = await fetch(`${API_URL}/api/v1/auth/goal`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({weekly_goal_hours: weeklyGoalHours})
+    })
+
+    if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.detail || 'Failed to update weekly goal')
+    }
+
+    return response.json()
 }

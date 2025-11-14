@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 
 from app.auth import router as auth_router
 from app.chat import router as chat_router
+from app.progress import router as progress_router
 from app.core.database import engine, Base
 
 @asynccontextmanager
@@ -30,6 +31,7 @@ app.add_middleware(
 
 app.include_router(auth_router.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(chat_router.router, prefix="/api/v1/chat", tags=["chat"])
+app.include_router(progress_router.router, prefix="/api/v1/progress", tags=["progress"])
 
 @app.post("/health")
 def health():

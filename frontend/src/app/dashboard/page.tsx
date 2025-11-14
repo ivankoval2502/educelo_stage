@@ -48,7 +48,7 @@ export default function DashboardPage() {
                             title="Learning Insights"
                             description="Track your progress with detailed analytics and reports"
                             icon={<ChartBar/>}
-                            href="/dashboard/insights"
+                            href="/dashboard/progress"
                             iconBg="bg-gradient-to-br from-purple-600 to-pink-600"
                         />
                     </div>
